@@ -1,13 +1,13 @@
 {
-  "name": "mishka",
+  "name": "Ray-Ban",
   "version": "1.0.0",
   "private": true,
-  "description": "Адаптивный проект, Мишка",
+  "description": "Тестовое задания : Ray Ban",
   "author": "Bogdan Vaskan",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bogdanGR/mishka"
+    "url": "https://github.com/bogdanGR/ray-ban"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.1",
