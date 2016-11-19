@@ -10,8 +10,8 @@
 <body class="container">
   <header class="page-header">
     <div class="page-header__wrapper">
-    <h1 class="page-header__title">Ecommerce Elements</h1>
-    <nav class="menu">
+      <h1 class="page-header__title">Ecommerce Elements</h1>
+      <nav class="menu">
         <ul class="menu__list">
           <li class="menu__item">
             <a class="menu__link  menu__link--active">Home</a>
@@ -29,27 +29,80 @@
             <a class="menu__link" href="#">Contact</a>
           </li>
         </ul>
-        <ul class="menu__search">
-          <li class="menu__item-search">
-            <input class="menu__input-search" type="search">
-          </li>
-        </ul>
-    </nav>
+      </nav>
+      <form class="search" action="/form">
+        <label class="search__label">
+        <input class="search__input" type="search" placeholder="Search...">
+        </label>
+      </form>
     </div>
     </div>
-    <section class="promo">
-    </section>
   </header>
   <main>
+    <section class="promo">
+      <div class="promo__wrapper">
+        <figure class="promo__logo">
+          <img class="promo__img" src="img/logo.jpg" alt="logorayban" width="190" height="100">
+        </figure>
+        <h2 class="promo__title">RB2132 901 New Wayfarer</h2>
+        <p class="promo__text">
+          The Ray-Ban® Wayfarer® is simply the most recognizable style in sunglasses. The distinct shape is paired with the traditional Ray-Ban signature logo on the sculpted temples. After its initial design in 1952, the Ray-Ban Wayfarer quickly endeared itself
+          to Hollywood filmmakers, celebrities, musicians and artists, solidifying its iconic status for years to come.
+        </p>
+        <a class="promo__btn" href="">Find out more</a>
+      </div>
+      <h3 class="promo__subtitle">Never hide</h3>
+    </section>
+    <section class="products">
+      <article class="product">
+        <figure class="product__img">
+          <img src="img/product.jpg" alt="product 1" width="360" height="240">
+        </figure>
+        <div class="product__bar-wrapper">
+          <h3 class="product__title">Product 1</h3>
+          <p class="product__descr">(Parrot / Light Blue)</p>
+          <p class="product__size">Size: S <a class="product__link" href="#">[Change]</a></p>
+          <span class="product__price">&#163;14.00</span>
+          <a class="product__btn" href="">Add to basket</a>
+        </div>
+      </article>
+      <article class="product">
+        <figure class="product__img">
+          <img src="img/product.jpg" alt="product 1" width="360" height="240">
+        </figure>
+        <div class="product__bar-wrapper">
+          <h3 class="product__title">Product 2</h3>
+          <p class="product__descr">(Parrot / Light Blue)</p>
+          <p class="product__size">Size: S <a class="product__link" href="#">[Change]</a></p>
+          <span class="product__price">&#163;27 .00</span>
+          <a class="product__btn" href="">Add to basket</a>
+        </div>
+      </article>
+      <article class="product">
+        <figure class="product__img">
+          <img src="img/product.jpg" alt="product 1" width="360" height="240">
+        </figure>
+        <div class="product__bar-wrapper">
+          <h3 class="product__title">Product 3</h3>
+          <p class="product__descr">(Parrot / Light Blue)</p>
+          <p class="product__size">Size: S <a class="product__link" href="#">[Change]</a></p>
+          <span class="product__price">&#163;115.00</span>
+          <a class="product__btn" href="">Add to basket</a>
+        </div>
+      </article>
+    </section>
 
   </main>
   <footer class="page-footer">
+    <h1 class="page-footer__title">Ecommerce Elements</h1>
+    <div class="social-links">
+      <a class="social-link  social-link--tw" href="#">Твиттер</a>
+      <a class="social-link  social-link--fb" href="#">Фейсбук</a>
+      <a class="social-link  social-link--vimeo" href="#">Vimeo</a>
+      <a class="social-link  social-link--Pinterest" href="#">Pinterest</a>
 
-      <div class="social-links">
-        <a class="social-link  social-link--inst" href="#">Инстаграм</a>
-        <a class="social-link  social-link--fb" href="#">Фейсбук</a>
-        <a class="social-link  social-link--tw" href="#">Твиттер</a>
-      </div>
+
+    </div>
 
   </footer>
 </body>
