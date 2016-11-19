@@ -420,41 +420,6 @@ img {
   margin: 0 auto;
   padding: 0 5px; }
 
-.sprite {
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
-  display: block; }
-
-.sprite-Facebook {
-  width: 7px;
-  height: 16px;
-  background-position: -5px -5px; }
-
-.sprite-Magnifying-Glass {
-  width: 15px;
-  height: 16px;
-  background-position: -22px -5px; }
-
-.sprite-Pinterest {
-  width: 12px;
-  height: 16px;
-  background-position: -47px -5px; }
-
-.sprite-Twitter {
-  width: 16px;
-  height: 13px;
-  background-position: -69px -5px; }
-
-.sprite-Vimeo {
-  width: 16px;
-  height: 14px;
-  background-position: -69px -28px; }
-
-.sprite-vans-logo {
-  width: 80px;
-  height: 80px;
-  background-position: -95px -5px; }
-
 .menu {
   text-transform: uppercase; }
 
@@ -495,7 +460,7 @@ img {
     right: 20px;
     bottom: -10px;
     left: 20px;
-    height: 5px;
+    height: 3px;
     background-color: #444444; }
 
 .page-footer {
@@ -530,39 +495,41 @@ img {
 .page-header {
   margin-top: 70px;
   margin-bottom: 40px; }
-  .page-header__wrapper {
-    padding: 27px 0;
-    background-color: #fcfcfc; }
-    .page-header__wrapper:before, .page-header__wrapper:after {
-      content: "";
-      display: table; }
-    .page-header__wrapper:after {
-      clear: both; }
-  .page-header__title {
-    position: relative;
-    float: left;
-    width: 260px;
-    margin: 0;
-    margin-left: 40px;
-    font-size: 16px;
-    line-height: 21px;
-    font-weight: 400;
-    color: #333333; }
-    .page-header__title:after {
-      position: absolute;
-      content: "";
-      top: -5px;
-      right: 50px;
-      width: 1px;
-      height: 40px;
-      color: #b5b5b5;
-      border-right: solid #b5b5b5 1px; }
+
+.page-header__wrapper {
+  padding: 27px 0;
+  background-color: #fcfcfc; }
+  .page-header__wrapper:before, .page-header__wrapper:after {
+    content: "";
+    display: table; }
+  .page-header__wrapper:after {
+    clear: both; }
+
+.page-header__title {
+  position: relative;
+  float: left;
+  width: 260px;
+  margin: 0;
+  margin-left: 40px;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333; }
+  .page-header__title:after {
+    position: absolute;
+    content: "";
+    top: -5px;
+    right: 50px;
+    width: 1px;
+    height: 40px;
+    color: #b5b5b5;
+    border-right: solid #b5b5b5 1px; }
 
 .product {
   display: inline-block;
   vertical-align: middle;
-  font-size: 0;
-  padding-right: 40px; }
+  padding-right: 40px;
+  font-size: 0; }
   .product:last-child {
     padding-right: 0; }
 
@@ -635,8 +602,8 @@ img {
   text-decoration: none; }
 
 .products {
-  font-size: 0;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  font-size: 0; }
 
 .social-link {
   position: relative;
@@ -652,7 +619,8 @@ img {
     content: "";
     top: 51%;
     left: 50%;
-    transform: translate(-50%, -51%);
+    -ms-transform: translate(-50%, -51%);
+        transform: translate(-50%, -51%);
     background-image: url("../img/sprite.png");
     background-repeat: no-repeat; }
   .social-link--tw::before {
@@ -686,6 +654,9 @@ img {
 .search__input {
   width: 100%;
   font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  line-height: 21px;
+  font-weight: 400;
   border: none; }
 
 .search__label {
@@ -725,13 +696,15 @@ img {
     background: url("../img/logo-ray-ban.jpg") no-repeat; }
 
 .promo__img {
-  order: 1;
+  -ms-flex-order: 1;
+      order: 1;
   margin-top: 20px;
   width: 190px;
   height: 100px; }
 
 .promo__title {
-  order: 2;
+  -ms-flex-order: 2;
+      order: 2;
   margin: 0;
   padding: 0;
   font-size: 21px;
@@ -741,19 +714,24 @@ img {
   color: #444444; }
 
 .promo__text {
-  order: 3;
+  -ms-flex-order: 3;
+      order: 3;
+  padding-bottom: 50px;
   width: 500px;
   font-size: 14px;
   line-height: 28px;
   font-weight: 400; }
 
 .promo__wrapper {
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 500px;
   padding-left: 40px; }
 
 .promo__subtitle {
+  display: -ms-flexbox;
   display: flex;
   width: 475px;
   margin: 0;
@@ -765,7 +743,8 @@ img {
   text-transform: uppercase; }
 
 .promo__btn {
-  order: 4;
+  -ms-flex-order: 4;
+      order: 4;
   padding: 11px 20px;
   font-size: 14px;
   line-height: 21px;
@@ -782,7 +761,11 @@ img {
   border-collapse: collapse; }
 
 .table__td {
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #d7d7d7; }
+  .table__td--border-none {
+    border: none; }
 
 .table__title {
   margin: 0;
@@ -791,13 +774,13 @@ img {
   line-height: 21px;
   font-weight: 700;
   text-align: left;
-  background-color: #fefefe; }
+  color: #444444; }
 
 .table__product-name {
   padding-left: 10px;
   font-size: 16px;
   line-height: 21px;
-  font-weight: 400;
+  font-weight: 700;
   color: #444444;
   text-decoration: none; }
 
@@ -841,7 +824,7 @@ img {
   color: #444444; }
 
 .content {
-  width: 760px;
+  width: 670px;
   margin-bottom: 140px;
   padding: 30px;
   background-color: #fefefe; }
