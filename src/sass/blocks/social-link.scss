@@ -1,0 +1,48 @@
+.social-link {
+  position: relative;
+
+  display: inline-block;
+  vertical-align: top;
+  width: 37px;
+  height: 20px;
+
+  font-size: 0;
+
+  text-decoration: none;
+  background-color: #fafafa;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%,-51%);
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+  }
+  &--tw::before {
+    width: 16px;
+    height: 13px;
+
+    background-position: -69px -5px;
+  }
+  &--fb::before {
+    width: 7px;
+    height: 16px;
+
+    background-position: -5px -5px;
+  }
+  &--vimeo::before {
+    width: 16px;
+    height: 14px;
+
+    background-position: -69px -28px;
+  }
+  &--Pinterest::before {
+    width: 12px;
+    height: 16px;
+
+    background-position: -47px -5px;
+  }
+
+}

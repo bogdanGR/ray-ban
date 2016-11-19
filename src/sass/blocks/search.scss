@@ -1,0 +1,41 @@
+.search {
+  float: right;
+  width: 150px;
+  padding-right: 100px;
+}
+
+.search__input {
+  width: 100%;
+
+  font-family: "Roboto", sans-serif;
+
+  border: none;
+}
+.search__label {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: -45px;
+    top: 3px;
+
+    width: 15px;
+    height: 16px;
+
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    background-position: -22px -5px;
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    top: -5px;
+    left: -15px;
+    width: 1px;
+    height: 40px;
+    color: #b5b5b5;
+    border-left: solid #b5b5b5 1px;
+  }
+}
