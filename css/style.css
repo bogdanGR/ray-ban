@@ -778,19 +778,15 @@ img {
   text-decoration: none; }
 
 .table {
-  margin-bottom: 140px;
-  padding: 30px;
-  background-color: #fefefe;
   border-spacing: 0;
   border-collapse: collapse; }
 
-td {
-  border-bottom: 1px solid #d7d7d7;
-  padding: 30px; }
+.table__td {
+  border-bottom: 1px solid #d7d7d7; }
 
 .table__title {
-  padding-left: 30px;
-  padding-top: 25px;
+  margin: 0;
+  padding-bottom: 25px;
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
@@ -843,3 +839,9 @@ td {
   line-height: 18px;
   font-weight: 700;
   color: #444444; }
+
+.content {
+  width: 760px;
+  margin-bottom: 140px;
+  padding: 30px;
+  background-color: #fefefe; }
